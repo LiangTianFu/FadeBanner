@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.out {
+  width: 590px;
+  height: 340px;
+  border: 5px solid #000;
+  margin: 50px auto;
+  position: relative;
+}
+
+.out .img li {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.out .num {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  font-size: 0;
+  /*去掉li之间的空格间隙*/
+  text-align: center;
+  width: 100%;
+  /*定位后脱离文档流，没有了默认宽度，所以要加上 宽度 text-align: center才起作用*/
+}
+
+.out .num li {
+  width: 20px;
+  height: 20px;
+  background: #666;
+  color: #fff;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0 3px;
+  cursor: pointer;
+}
+
+.out .num li.active {
+  background: #a00;
+}
+
+.out .btn {
+  position: absolute;
+  top: 50%;
+  margin-top: -30px;
+  width: 30px;
+  height: 60px;
+  line-height: 60px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  display: none;
+  cursor: pointer;
+}
+
+.out:hover .btn {
+  display: block;
+}
+
+.out .left {
+  left: 0;
+}
+
+.out .right {
+  right: 0;
+}
