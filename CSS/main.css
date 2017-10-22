@@ -1,0 +1,42 @@
+*{
+        padding:0;
+        margin:0;
+        list-style: none;
+        font-family: "微软雅黑";
+        outline: none;
+    }
+    ul{list-style: none;}
+    .banner{
+        width:520px;
+        height:280px;
+        margin:50px auto;
+        position:relative;
+        overflow: hidden;
+    }
+    .img>li{
+        position:absolute;
+        transition: all 1s ease;
+        opacity:0;
+    }
+    .order{
+        width:100%;
+        position:absolute;
+        top:430px;
+        text-align: center;
+    }
+    .order li{
+        display:inline-block;
+        width:20px;
+        height:20px;
+        background: white;
+        border-radius: 50%;
+        margin: 0 15px;
+        cursor: pointer;
+    }
+    #img .on{
+        display:block;
+        opacity:1;
+    }
+    #order .on{
+        background: chocolate;
+    }
